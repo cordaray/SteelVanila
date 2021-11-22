@@ -1,0 +1,37 @@
+
+11/15/2021
+The URL must be the same origin as the current URL or the method will throw an exception.
+info found in: https://www.javascripttutorial.net/web-apis/javascript-history-pushstate/ */
+window.history.pushState(null, null, "index.html#dashboard");
+
+pushState does not activate popState Event Listener. So a manual event listener needs to be configured.
+
+More info at: https://dirask.com/posts/JavaScript-on-location-changed-event-on-url-changed-event-DKeyZj
+
+11/16/2021
+The function eval allows us to execute valid javascript from a string
+Found in: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/eval
+
+11/18/2021
+Good link to know how to organize css
+https://ogkcreative.com/development/8-html-css-tips-for-organizing-code-in-your-web-project/
+
+TO-DO:
+-Organize CSS.
+-Think of a potential website
+
+11/19/2021
+How to style inputs
+https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+
+Remove autocomplete from input text
+https://stackoverflow.com/questions/50876490/how-to-remove-text-auto-save-in-html-input
+
+11/22/2021
+Found !important css key word to override style that can't be overriden somehow
+<<The !important rule in CSS is used to add more importance to a property/value than normal.
+In fact, if you use the !important rule, it will override ALL previous styling rules for that 
+specific property on that element!>>
+Found in: 
+https://www.w3schools.com/css/css_important.asp
+

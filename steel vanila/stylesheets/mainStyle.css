@@ -1,0 +1,78 @@
+/* -- Main Style is shared all across the website -- */
+
+/* -- VARIABLES -- */
+:root {
+  --primary-color: #000000;
+  --accent-color: #ffffff;
+  --accent2-color: #bb6a00;
+  --offwhite-color: #646464;
+  --font-main: "Poppins", sans-serif;
+  --font-size-large: 32px;
+  --font-size-medium: 16px;
+}
+/* -- GENERAL TAGS -- */
+body {
+  background-color: var(--primary-color);
+  font-family: var(--font-main);
+  color: var(--accent-color);
+}
+
+/* This class allows the smooth transition between components */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.init {
+  display: block;
+  animation: fadeIn 1s;
+}
+
+/* COMPONENT CLASSES (WORK IN PROGRESS) */
+.input-class {
+  border: none;
+  border-bottom: 1px solid var(--offwhite-color);
+  background-color: var(--primary-color);
+  height: 25px;
+  width: 100%;
+  color: var(--accent-color);
+}
+
+.input-class:focus{
+    border: 1px solid;
+}
+
+.btn-class {
+  background-color: var(--accent2-color);
+  border: none;
+  height: 40px;
+  width: 100%;
+  color: var(--accent-color);
+  font-size: var(--font-size-medium);
+}
+
+.link-class {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.link-class:hover {
+  color: var(--offwhite-color);
+  transition: color 0.5s;
+}
+
+.nav-class {
+  border: none;
+  border-bottom: 1px solid var(--offwhite-color);
+}
+
+.container-class {
+    width: 100%;
+    overflow-y: auto;
+    height: 100%;
+  }

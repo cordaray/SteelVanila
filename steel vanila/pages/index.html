@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Title of the document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../stylesheets/mainStyle.css" />
+    <link rel="stylesheet" href="../stylesheets/dashboardStyle.css" />
+    <!--Further custom CSS  can be added here -->
+  </head>
+  <body>
+    <header>
+      <nav class="nav-class">
+        <div>
+          <label>STEEL VANILA</label>
+          <i class="fa fa-bars" style="font-size: 40px" id="burger"></i>
+        </div>
+        <ul class="hidden" id="navbar-menu">
+          <li>
+            <a href="#" class="link-class" id="post">Post</a>
+          </li>
+          <li>
+            <a href="#" class="link-class" id="dashboard">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="link-class" id="profile">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container" class="container-class"></div>
+    <script type="module" src="../scripts/dashboardScript.js"></script>
+    <script>
+      //This makes the burger menu functional for responsive design
+      let burger = document.getElementById("burger");
+      burger.addEventListener("click", () => {
+        let navbarMenu = document.getElementById("navbar-menu");
+        if (navbarMenu.classList.contains("hidden")) {
+          navbarMenu.classList.remove("hidden");
+          navbarMenu.classList.add("visible");
+        } else {
+          navbarMenu.classList.remove("visible");
+          navbarMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="./stylesheets/mainStyle.css">
+<link rel="stylesheet" href="./stylesheets/loginStyle.css">
+</head>
+<body>
+<!--This DIV encapsulates both forms and the title to center it all vertically -->
+<div style="position:relative; top:200px;">
+<h1 style="display:block; width:50%; margin:auto; text-align:center">STEEL VANILA</h1>
+<div class="registerForm visible" id="login">
+    <div id="logInformation">
+        <p>Warning test</p>
+    </div>
+<form action="">
+    <label for="username">Username:</label><br>
+    <input type="text" id="logUsername" name="username" class="input-class" autocomplete="off"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="logPassword" name="password" class="input-class" autocomplete="off"><br><br>
+    <input type="submit" value="Log in" id="btnLogin" class='btn-class'>
+    <div style="margin-top: 20px;">
+        <a href="" id="regLink" class="link-class">Register here</a>
+    </div>
+  </form> 
+</div>
+<div class="registerForm hidden" id="register">
+    <div id="regInformation">
+        <p>Warning test</p>
+    </div>
+<form action="">
+    <label for="username">Username:</label><br>
+    <input type="text" id="regUsername" name="username" class="input-class" autocomplete="off"><br>
+    <label for="password">Password:</label><br>
+    <input type="text" id="regPassword" name="password" class="input-class" autocomplete="off"><br>
+    <label for="password">Confirm Password:</label><br>
+    <input type="text" id="regConfirmPassword" name="password" class="input-class" autocomplete="off"><br><br>
+    <input type="submit" value="Register" id="btnRegister" class='btn-class'>
+    <div style="margin-top: 20px;">
+        <a href="" id="logLink" class="link-class">Log in here</a>
+    </div>
+  </form> 
+</div>
+</div>
+<script src="./scripts/loginScript.js"></script>
+</body>
+</html>
