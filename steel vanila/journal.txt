@@ -35,3 +35,9 @@ specific property on that element!>>
 Found in: 
 https://www.w3schools.com/css/css_important.asp
 
+12/31/2021
+As per this blog, eval is a bad practice as it can be used to inject js code into the front end 
+a workaround is provided in the following link:
+https://stackoverflow.com/questions/14014371/how-do-i-convert-a-string-into-an-executable-line-of-code-in-javascript/21243479
+
+

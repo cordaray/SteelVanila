@@ -24,7 +24,7 @@ export default class Renderer {
         result.classList.add('init')
         document.getElementById(target).replaceChildren(result);
         //This sentence allows us to execute the javascript in the script tag if there is one
-        eval(body.querySelector("script")?.innerHTML);
+        new Function(body.querySelector("script")?.innerHTML)();
       })
       .catch((error) => {
         console.warning("[Unable to mount HTML Component]: ", error);
